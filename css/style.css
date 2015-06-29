@@ -1,7 +1,7 @@
 * {
   padding:0;
   margin:0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .clearfix {
@@ -48,6 +48,10 @@ h2, h3, h4, h5 {
   padding-right: 5%;
 }
 
+.education-entry h3 {
+  padding-left: 0;
+  margin-top: 20px;
+}
 
 .date-text {
   font-style: italic;
@@ -63,7 +67,6 @@ h2, h3, h4, h5 {
   color: #999999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -79,7 +82,24 @@ a {
   display: block;
 }
 
+#topContacts {
+  margin-bottom: 20px;
+}
+
+#footerContacts a,
+#topContacts a {
+  display: inline;
+}
+
+.header-role {
+  display: inline-block;
+  margin: 0 0 10px 10px;
+  color: #dddddd;
+}
+
 .welcome-message {
+  display: block;
+  margin-bottom: 10px;
   font-style: italic;
   font-size: 18px;
   color: #F3F3F3;
@@ -88,7 +108,14 @@ a {
 
 #skillsH3 {
   color: #F5AE23;
-  display: none;
+}
+
+.skill-list  {
+  float: left;
+}
+
+.skill-list li{
+  padding-left: 10px;
 }
 
 .orange {
@@ -100,8 +127,13 @@ a {
 }
 
 .white-text {
-  font-weight: bold;
   color: #FFFFFF;
+}
+
+#workExperience,
+#projects,
+#education {
+  padding: 20px 0 40px;
 }
 
 .gray {
@@ -128,6 +160,10 @@ a {
   padding: 10px;
 }
 
+.flex-item {
+  padding: 5px;
+}
+
 .center-content {
   padding-top: 2.5%;
   padding-left: 5%;
@@ -142,12 +178,18 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
+  margin-right: 20px;
   width: 200px;
-  display: none;
 }
 
 img {
   padding: 10px;
+}
+
+.project-img {
+  border: 1px solid #eeeeee;
+  margin: 10px 10px 10px 0;
+  max-width: 30%
 }
 
 /* Bar chart stuff */
@@ -183,6 +225,11 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
+  .header-role {
+    display: block;
+    margin-left: 0;
+  }
+
   #letsConnect {
     margin-top: 10%;
   }
@@ -192,24 +239,22 @@ span {
   .welcome-message {
     display: none;
   }
+  .project-img  {
+    max-width: 75%;
+    margin:0 auto 10px;
+    display: block;
+  }
 }
 
 #map {
   display: block;
   height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 20px 5%;
 }
 
 #mapDiv {
   height: 400px;
   width: 100%;
-  padding-bottom: 5%;
-}
-
-@media only screen and (min-width: 750px) {
-  #skillsH3,
-  .biopic {
-    display: block;
-  }
+  padding: 20px 0 5%;
+  margin-bottom: 40px;
 }
